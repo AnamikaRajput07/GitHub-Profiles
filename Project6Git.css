@@ -1,0 +1,240 @@
+:root {
+  --lm-bg: #f6f8ff;
+  --lm-bg-content: #fefefe;
+  --lm-text: #4b6a9b;
+  --lm-text-alt: #2b3442;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  --lm-icon-bg: brightness(100%);
+  /* Btn */
+  --btn: #0079ff;
+  --btn-hover: #60abff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    color: var(--lm-text-alt);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--lm-bg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.wrapper{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    color: var(--lm-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parahead{
+    font-size: 1.8rem;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    width:90%;
+}
+
+i{
+    margin: 7px;
+    font-size: 1.3rem;
+}
+
+
+.searchBar{
+    position: relative;
+    width: 60%;
+    max-width: 600px;
+    height: 60px;
+    background-color: var(--lm-bg-content);
+    border-radius: 0.7em;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBar p{
+    width:80%;
+}
+
+.placeholder{
+    all:unset;
+    width:80%;
+    font-size: 0.9em;
+}
+
+.searchBar p i{
+    color: blue;
+}
+
+.searchbtn{
+    font-size: 1em;
+    background-color: var(--btn);
+    color: white;
+    width: 5em;
+    border: none;
+    height: 85%;
+    border-radius: 5px;
+    margin-right: 0.5em;
+
+}
+
+.searchbtn:hover{
+    background-color: var(--btn-hover);
+}
+.userInfo{
+    width: 60%;
+    max-width: 600px;
+    margin-top: 1rem;
+    min-height: 380px;
+    background-color: var(--lm-bg-content);
+    box-shadow: var(--lm-shadow);
+    border-radius: 0.7em;
+}
+
+.personalInfo{
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+
+.personalInfo img{
+    width: 90px;
+    border-radius: 90px;
+}
+
+.name p{
+    font-weight: bold;
+}
+
+.name a{
+    color: blue;
+    font-size: small;
+}
+
+[data-joined]{
+    font-size: small;
+    color: var(--lm-text);
+}
+
+[data-bio]{
+    margin: 1.2rem 1.5rem;
+    color: var(--lm-text);
+    font-size: small;
+}
+
+[data-files]{
+    margin: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--lm-bg);
+    box-shadow: var(--lm-shadow);
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+
+[data-files] div{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+[data-files] div p{
+    color: var(--lm-text);
+    font-size: small;
+}
+
+[data-files] div a{
+    color: var(--lm-text-alt);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contactInfo{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    color: var(--lm-text);
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+}
+
+.contactInfo a{
+    color: var(--lm-text);
+    font-size: medium;
+    text-decoration: none;
+}
+
+.contactInfo i{
+    color: var(--lm-text);
+    font: small;
+}
+
+.dark{
+    position: absolute;
+    top: 5px;
+    right:20px;
+    color: var(--lm-text);
+    background-color: var(--lm-bg);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.light{
+    position: absolute;
+    right:20px;
+    top: 5px;
+    scale: 0;
+    text-decoration: none;
+    border: none;
+    background-color: var(--lm-bg);
+    color: var(--lm-text);
+}
+
+#noResults{
+  position: absolute;
+  text-transform: capitalize;;
+  top: -30px;
+  right: 2px;
+  background-color: red;
+  border-radius: 10px;
+  width: 150px;
+  padding: 3px 1px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-small;
+  scale: 0;
+  transition: 0.5s;
+}

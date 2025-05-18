@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hub Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="Project6Git.css">
+
+
+</head>
+
+<body>
+<div class="container">
+    <div class="wrapper">
+        <!-- modes -->
+        <div class="header">
+            <p class="parahead">DevDetective</p>
+            <div>
+                <button onclick="lightmode()"  class="light">Light<i class="fas fa-sun light-mode-icon"></i></button>
+                <button onclick="darkmode()" class="dark">Dark<i class="fas fa-moon dark-mode-icon"></i> </button>
+
+            </div>
+            </div>
+
+
+        <!-- search bar -->
+        <form class="searchBar">
+            
+            <p>
+                <i class="fas fa-search"></i>
+            
+                <input data-input placeholder="Enter a Github username..." type="text" class="placeholder">
+            </p>
+
+            <button type="submit" class="searchbtn">Search</button>
+
+            <div class="error">
+              <p id="noResults">no search results</p>
+            </div>
+            
+        </form>
+
+
+        <!-- userProfile -->
+         <div class="userInfo">
+
+            <div class="personalInfo">
+                <img data-img>
+                <div data-name class="name">
+                    <p data-profilename></p>
+                    <a data-username></a>
+                </div>
+                <p data-joined></p>
+            </div>
+
+            <div class="bioInfo">
+                <p data-bio></p>
+                <div data-files>
+                    <div>
+                        <p>Repos</p>
+                        <a data-repos></a>
+                    </div>
+                    
+                    <div>
+                        <p>Followers</p>
+                        <a data-followers></a>
+                    </div>
+                    
+                    <div>
+                        <p>Following</p>
+                        <a data-following></a>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="contactInfo">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a data-location></a>
+                </div>
+                
+                <div>
+                    <i class="fas fa-link"></i>
+                    <a data-link></a>
+                </div>
+                
+                <div>
+                    <i class="fab fa-twitter"></i>
+                    <a data-twitter></a>
+                </div>
+                
+                <div>
+                    <i class="fas fa-building"></i>
+                    <a data-org></a>
+                </div>
+
+            </div>
+         </div>
+    </div>
+</div>
+    <script src="Project6Git.js"></script>
+    
+</body>
+</html>
